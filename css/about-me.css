@@ -1,0 +1,313 @@
+/*GENERAL*/
+* {
+	box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+}
+li {
+	list-style: none;
+	margin-left: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*NAV*/
+#nav .nav li {
+	display: inline;
+	
+
+}
+
+.nav {
+	height: 60px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+#nav ul {
+  	text-align: center;
+
+ }
+
+#nav ul li a{ 
+	color: #343957;
+}
+
+#nav ul li {
+	display: inline;
+	margin-left: 20px;
+	margin-right: 20px;
+	line-height: 2;
+	font-size: 24px;
+	transition: .3s;
+}
+
+.nav li a:hover{
+  color: #E07314!important;
+  transition: .2s;
+}
+
+/*MOBILE NAV*/
+.mobile-nav {
+	width: 34px;
+	height: 44px;
+	cursor: pointer;
+}
+
+.mobile-nav div {
+	width: 100%;
+	height: 3px;
+	margin-top: 5px;
+	background-color: #343957;
+}
+
+.exit {
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    background-color: tomato!important;
+}
+.exit2 {
+  -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+  margin-top: -3px!important;
+  background-color: tomato!important;
+ }
+
+.exit3 {
+  display: none;
+}
+
+.line1,
+.line2,
+.line3 {
+  transition: .5s;
+}
+
+#nav {
+  display: none;
+}
+
+.mobile-nav {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.drop-nav {
+	display: none; 
+}
+
+
+
+.show {
+    position: absolute;
+	top:  0px;
+	right:  0px;
+	z-index: 1;
+	background-color: #fff;
+	width: 200px;
+	height: 200px;
+	box-shadow: -1px -1px 15px #363636;
+	transition: .5s;
+}
+
+
+
+.drop-down .drop-nav {
+	text-align: left;
+}
+
+	.drop-down .drop-nav li {
+		margin-top: 10px;
+	}
+
+.drop-down .drop-nav li a {
+	color: #343957;
+	font-size: 24px;
+	border-bottom: none;
+	margin-left: 30px;
+}
+
+.drop-nav .drop-aboutMe a {
+  		color: #E07314!important;
+  	}
+
+.drop-aboutMe {
+	color:  #E07314;
+}
+
+
+/*MAIN*/
+header {
+	background-color: #fff;
+	width: 100%;
+	height: 500px;
+}
+.about-container {
+	width: 85%;
+	margin: 0 auto;
+}
+.about-container hr {
+  width: 37%;
+  border: solid #ADADAD  3px;
+  float: left;
+  margin-top: 0;
+}
+.about-me {
+  font-size: 54px;
+  text-align: center;
+  color: #E07314;
+  margin-top:50px;
+  margin-bottom: 0;
+  font-family: 'Cabin', sans-serif;
+  font-weight: lighter;
+}
+
+p {
+	width: 100%;
+	font-size: 28px;
+    text-align: center;
+    line-height: 1.4;
+    font-family: 'Nunito Sans', sans-serif;
+    color:gray;
+    margin-top: 50px;
+}
+
+.nav .aboutMe a {
+	color: #E07314!important;
+}
+.about-container div:nth-of-type(1) {
+	width: 230px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*FOOTER*/
+footer {
+	width: 100%;
+	height: 85px;
+	background-color: #343957;
+}
+
+
+footer ul {
+	
+	padding-left: 0;
+	height: auto;
+	width: 100%;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+footer ul li {
+	display: inline;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+    font-weight: 600;
+}
+.footer {
+  margin:-10px auto;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+ 
+
+footer .city {
+
+  position: relative;
+  bottom:10px;
+}
+
+.location {
+	margin-top: 15px;
+}
+
+.mail-footer,
+.twitter-footer,
+.github-footer {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+#contact {
+	margin-top: 20px;
+}
+
+.mail:hover {
+	fill:#E07314;
+	transition: .3s;
+}
+
+.twitter:hover {
+	fill:#E07314;
+	transition: .3s;
+}
+
+.github:hover {
+	fill:#E07314;
+	transition: .3s;
+}
+
+@media screen and (min-width: 480px) {
+	.mobile-nav {
+		right: 20px;
+		top: 20px;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	p {
+	   font-size: 20px;
+
+	}
+}
+@media screen and (min-width: 580px) {
+	.about-me {
+		font-size: 5em;
+	} 
+	.about-container div:nth-of-type(1) {
+	    width: 340px;
+    }
+    p {
+	    font-size: 28px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.about-container div:nth-of-type(1) {
+		width: 475px;
+	}
+	.about-me {	
+	    margin-top: 20px;	
+		font-size: 7em;
+	}  
+	.about-container hr {
+  		border: solid #ADADAD  4px;
+	}
+
+	p {
+		font-size: 32px;
+	}
+
+	.drop-down {
+  		display: none;
+  	}
+
+  	#nav {
+  		display: initial;
+  	}
+
+}
+

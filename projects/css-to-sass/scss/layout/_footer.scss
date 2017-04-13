@@ -1,0 +1,46 @@
+/********************
+      FOOTER
+********************/
+.footer-name {
+  font-size: $ftrName-size;
+  font-weight: bolder;
+  float: left;
+}
+
+.top {
+  float:right; 
+  width: auto;
+  font-weight: bolder;
+
+  @include tablet {
+  display: none;
+  }
+}
+
+ .footer {
+  width: 95%;
+  border: 1px solid $light-grey;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+li {
+  margin-top: 25px;
+  margin-bottom: 2em;
+ }
+}
+
+.secondary-nav {
+  display: none;
+
+@include tablet {
+  display: block;
+  visibility: visible;
+  float: right;
+li {
+  display: inline;
+  float: left;
+  padding-right: 25px;
+  font-weight: bolder;
+  }
+ }
+}

@@ -1,0 +1,247 @@
+.container {
+  @extend .container;
+  text-align: center;
+}
+
+/********************
+    INTRO&AVATAR
+********************/
+.col {
+  padding-bottom: 1.5em;
+  padding-top: 25px;
+  @extend .container;
+@include tablet {
+   .avatar {
+  float: right;
+  width: 39%;
+  padding: 1.4em;
+ }
+  }
+.profile-image {
+  width: 80%;
+
+@include tablet {  
+  width: 90%;
+  }
+ }
+.intro {
+  color: $dark-grey;
+
+  @include tablet {
+  float: left;
+  width: 56%;
+  text-align: left;
+  font-size: 1.2em;
+  padding-left: 25px;
+  }
+  
+  @include desktop {
+  font-size:  1.7em;
+  }
+ }
+}
+
+/********************
+      PORTFOLIO
+********************/
+.portfolio {
+  background-color: $white;
+  padding: 20px 0 1.3em;
+
+  @include desktop {
+   background-color: $white;
+   padding: 20px 0 20px;
+  }
+  #portfolio {
+  text-align: center;
+  padding: 25px 0 25px;
+  font-weight: bolder;
+
+  @include desktop {
+  font-weight: bolder;
+  }
+ }
+   p {
+  padding-bottom: 10px;
+ }
+}
+
+.grid {
+@include tablet {
+  float: left;
+  width: 50%;
+  margin: 0 auto;
+  padding: 5px 10px;
+}
+  @include desktop {
+  width: 33.333%;
+  float: left;
+  padding: 0 10px 0 8px;
+ }
+}
+
+.col-6 {
+@include desktop {
+	clear:right;
+ }
+}
+
+.col-7 {
+@include tablet {
+	clear:left;
+ }
+}
+
+ 
+.col-3 {
+  @include tablet-max {
+	clear: left;
+ }
+}
+
+/********************
+      SKILLS 
+********************/
+.skills {
+  background-color: $white;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 6px 6px 3px $box-shadow-grey;
+
+  h4 {
+  padding: 10px;
+ } 
+}
+
+.skillbar {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 15px;
+  width: 90%;
+  background: $cloud-grey;
+  @include border-radius(3px);
+}
+
+.skillbar-title {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  font-weight: bold;
+  font-size: $skillbar-title-size;
+  color: $white;
+}
+
+.skillbar-title span {
+  color: black;
+  display: block;
+  padding: 0 20px;
+  @extend .height;
+}
+
+.skillbar-bar {
+  height:35px;
+  width: 0px;
+  @include border-radius(3px);
+}
+
+.skill-bar-percent {
+  position:absolute;
+  right: 10px;
+  top: 0;
+  font-size: $skillbar-percent-size;
+  @extend .height;
+  color:$dark-grey;
+}
+
+.html5 {
+  width: 95%;
+  background-color: $tomato-red;
+}
+
+.css3 {
+  width: 95%;
+  background-color: $light-blue;
+}
+
+.jquery {
+  width: 80%;
+  background-color: $blue;
+}
+
+.php {
+  width: 80%;
+  background-color: $purple;
+}
+
+.javascript {
+  width: 80%;
+  background-color: $yellow;
+}
+
+.sql {
+  width: 85%;
+  background-color: $light-orange;
+}
+
+.bar {
+  padding-bottom: 15px;
+}
+
+/********************
+      CONTACT
+********************/
+.contact {
+  padding-bottom: 6em;
+  padding-top: 3em;
+  width: 80%;
+
+  h4 {
+  font-weight: bolder;
+ }
+
+  p {
+  padding: 15px 0 1em;
+
+  @include desktop {
+  width: 65%;
+  font-size: $contact-p-size;
+  margin: 0 auto;
+  }
+ }
+}
+
+.contact p,
+.contact li {
+    color: $dark-grey;
+  a {
+  color: $black;
+  &:hover {
+  color: $dark-grey;
+  }
+ }
+}
+
+.email,
+.phone {
+  padding-top: 15px;
+  padding-bottom: 15px;
+ @include desktop{
+  font-size: $contact-a-size;
+}
+ a {
+  padding-left: 7px;
+ 
+ }
+}
+
+
+
+
+
+
+
+
+

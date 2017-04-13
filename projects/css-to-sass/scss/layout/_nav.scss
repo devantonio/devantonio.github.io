@@ -1,0 +1,50 @@
+/********************
+      NAVIGATION
+********************/
+#main-nav {
+  text-align: center;
+  padding: 0 0 2px;
+  font-weight: bolder;
+  @include desktop {
+    display: block;
+    float: right;
+  }
+li {
+  padding: 10px;
+  display: block;
+  text-align: center;
+  margin: 10px;
+  background-color: $white;
+
+  @include tablet {
+   display: inline-block;
+   padding-right: 25px;
+   background-color: $cloud-grey;
+  }
+
+  @include desktop {
+    display: inline;
+    float: left;
+    margin-top: 15px;
+    background-color: $cloud-grey;
+  }
+ }
+}
+.name {
+  padding: 10px;
+  font-size: $name-size;
+  text-align: center;
+
+  @include desktop {
+    float: left;
+  }
+}
+
+@include desktop {
+ .main-header {
+  width: 95%;
+  padding-top: 30px;
+  margin: 0 auto;
+ }
+}
+	

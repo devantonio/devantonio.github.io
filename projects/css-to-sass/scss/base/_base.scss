@@ -1,0 +1,46 @@
+/********************
+        BASE
+********************/
+  * { 
+    box-sizing: border-box; 
+}
+
+body {
+  font-family: $primary-font;
+  line-height: 1;
+  background-color: $cloud-grey;
+  color: $black;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 90%;
+  box-shadow: 6px 6px 3px $box-shadow-grey;
+}
+
+ .contact ul,
+ .main-footer ul,
+ .main-footer li {
+   margin: 0;
+   padding: 0;
+}
+
+img {
+@include tablet {
+  max-width: 100%;
+ }
+}
+
+/*CLEARFIX*/
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: $clearfix-size;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
