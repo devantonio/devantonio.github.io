@@ -116,7 +116,7 @@ a {
 	z-index: 1;
 	background-color: #fff;
 	width: 200px;
-	height: 200px;
+	height: 150px;
 	box-shadow: -1px -1px 15px #363636;
 	transition: .5s;
 }
