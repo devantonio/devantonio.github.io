@@ -92,6 +92,17 @@ $( ".mobile-nav" ).click(function() {
 }
 });
 
+ $(window).click(function() {
+        $(".line1").removeClass("exit");
+        $(".line3").removeClass("exit2");
+        $(".line2").removeClass("exit3"); 
+        $(".drop-down").removeClass("show"); 
+        $(".drop-nav").css("display", "none");
+});
+
+$('.mobile-nav').click(function(event){
+    event.stopPropagation();
+});
   
 $('.btn').click(function(event) {
     var patt = new RegExp("@");
