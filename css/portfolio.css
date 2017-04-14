@@ -343,18 +343,13 @@ header {
   font-size: 24px;
   color: #ADADAD;
   transition: .5s;
-}
- .portfolio .button {
+  padding-top: 10px;
   cursor: pointer;
 }
 
 .portfolio .button:hover{ 
   border: solid #fff 3px;
   background-color: #fff;
-}
-
-.work-info .button {
-  padding: 10px;
 }
  
 .portfolio div:nth-of-type(2) {
