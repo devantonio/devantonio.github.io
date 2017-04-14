@@ -333,6 +333,9 @@ header {
 }
 .portfolio .button a {
   color:#ADADAD;
+  display: block;
+  width: 150px;
+  height: 60px;
 }
 .portfolio .button {
   width: 150px;
