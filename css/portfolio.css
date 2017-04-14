@@ -184,25 +184,6 @@ header {
   border-radius: 180px;
 }
  
-#twitter:hover,
-#github:hover,
-#mail:hover {
-  transition: .5s;
-  width: 40px;
-  height: 40px;
-} 
-
-#mail:hover {
-  fill:#F2C200;
-}
-
-#twitter:hover {
-  fill:#3371F5;
-}
-
-#github:hover {
-  fill:#633773;
-}
 
 /*MOBILE NAVIGATION*/
 .mobile-nav {
@@ -741,7 +722,26 @@ header {
   }
 
   
-  
+  #twitter:hover,
+#github:hover,
+#mail:hover {
+  transition: .5s;
+  width: 40px;
+  height: 40px;
+} 
+
+#mail:hover {
+  fill:#F2C200;
+}
+
+#twitter:hover {
+  fill:#3371F5;
+}
+
+#github:hover {
+  fill:#633773;
+}
+
   .drop-nav .nav-home a,  
   .nav-home {   
     color: #E07314!important;
