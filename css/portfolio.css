@@ -553,21 +553,7 @@ header {
 .location ul li{
   line-height: 70px;
 }
-
-
-
-
-
-/*            */
-
-
-
-
-
-
-
-
-
+/*  MEDIA QUERIES  */
 
 @media screen and (max-height: 480px) { 
   .img-container {
@@ -600,7 +586,7 @@ header {
 }
  
 @media screen and (max-width: 580px) {
-  header {
+ /* header {
     background: url(../background-photos/skyline5.jpg) 50%;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -609,8 +595,18 @@ header {
     position: relative;
     float: left;
     width: 100%;
+  }*/
+ header {
+    background: url(../background-photos/skyline5.jpg) 50%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center;
+    position: relative;
+    float: left;
+    width: 100%;
   }
-
 }
 
 @media screen and (min-width: 580px) {
