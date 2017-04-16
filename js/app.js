@@ -126,3 +126,11 @@ if ($(".email:text").val() === "" || $(".name:text").val() === "" || $(".textare
 }
 });
  
+var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
+window.load(function() {
+  if (iOS === true) {
+    $('header').addClass('ios-background');
+  }
+})
+console.log(iOS);
