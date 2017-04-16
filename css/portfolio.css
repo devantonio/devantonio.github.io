@@ -149,8 +149,7 @@ header {
 }
 
  header {
- background: url("../background-photos/skyline1.jpg") 50%;
-    background-attachment: fixed;
+ background: url("../background-photos/skyline1.jpg") 50%; 
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -161,8 +160,7 @@ header {
 
 .header {
   width: 100%;
-  height: 670px;
-  position: fixed;
+  height: 670px; 
   z-index: 1;
   top: 0;
   left: 0;
@@ -590,17 +588,7 @@ header {
   }
 }
  
-@media screen and (max-width: 580px) {
- /* header {
-    background: url(../background-photos/skyline5.jpg) 50%;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    text-align: center;
-    position: relative;
-    float: left;
-    width: 100%;
-  }*/
+@media screen and (max-width: 580px) { 
  header {
     background: url(../background-photos/skyline5.jpg) 50%;
     background-attachment: fixed;
@@ -708,6 +696,13 @@ header {
 }
  
 @media screen and (min-width: 768px) {
+  
+    header {
+    background-attachment: fixed;
+  }
+  .header {
+    position: fixed;
+  }
   .header {
     position: relative!important;
   }
