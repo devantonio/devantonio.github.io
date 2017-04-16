@@ -131,5 +131,6 @@ var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
  $(window).on('load', function () {
   if (iOS === true) {
     $('header').addClass('ios-background');
+    $('.footer-background').addClass('ios-background');
   }
 });
