@@ -715,15 +715,7 @@ header {
   left: 0;
   background-color:rgba(31,34,51,.9);
 }
-    header {
-    background-attachment: fixed;
-  }
-  .header {
-    position: fixed;
-  }
-  .header {
-    position: relative!important;
-  }
+    
   /********************
       MOBILE-NAV
   *********************/
