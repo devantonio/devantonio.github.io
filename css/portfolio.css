@@ -553,6 +553,11 @@ header {
 .location ul li{
   line-height: 70px;
 }
+
+.ios-background {
+  background-attachment: initial!important;
+}
+
 /*  MEDIA QUERIES  */
 
 @media screen and (max-height: 480px) { 
